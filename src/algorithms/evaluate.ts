@@ -111,7 +111,7 @@ export function evaluateGrouping(
     const maxGroupSize = Math.max(...groupsByIndex.map(g => g.length));
 
     // Multiple size checks for comprehensive protection
-    const shouldSkipCache = 
+    const shouldSkipCache =
       totalItems > maxCacheItems ||
       groupCount > maxCacheGroups ||
       maxGroupSize > maxCacheGroupSize;

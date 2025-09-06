@@ -23,7 +23,7 @@ export function compareItemsByCapacity(
 ): number {
   const capacityDiff = b.capacity - a.capacity; // Descending order
   if (capacityDiff !== 0) return capacityDiff;
-  
+
   // For equal capacities, use deterministic ordering based on ID
   return compareIds(a.id, b.id);
 }

@@ -13,16 +13,16 @@ export interface FlowResult {
 
 /**
  * Min-cost flow and LP relaxation approaches for balanced partitioning.
- * 
+ *
  * NOTE: This is a placeholder/heuristic implementation that provides basic
  * functionality but does not implement true min-cost flow or LP relaxation.
  * For production use, consider using specialized optimization libraries.
- * 
+ *
  * This algorithm is primarily intended for:
  * - Testing and development purposes
  * - Fallback when other algorithms fail
  * - Integration with external optimization solvers
- * 
+ *
  * The current implementation uses a simple greedy approach and should not
  * be relied upon for optimal solutions in production environments.
  */

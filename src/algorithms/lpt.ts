@@ -20,11 +20,11 @@ export function lptPartition(
   } = {}
 ): Grouping {
   const startTime = performance.now();
-  const { 
-    useRefinement = true, 
+  const {
+    useRefinement = true,
     maxRefinementIters = 100,
     maxGroupsForRefinement = 20,
-    maxGroupSizeForRefinement = 50
+    maxGroupSizeForRefinement = 50,
   } = options;
 
   try {
@@ -79,7 +79,10 @@ export function lptPartition(
     // Phase 2: Local refinement (CPU-only)
     if (useRefinement) {
       // Input size pre-check: Skip refinement for very large problems
-      if (groups <= maxGroupsForRefinement && groupSize <= maxGroupSizeForRefinement) {
+      if (
+        groups <= maxGroupsForRefinement &&
+        groupSize <= maxGroupSizeForRefinement
+      ) {
         iterations += performLocalRefinement(
           items,
           groupsById,

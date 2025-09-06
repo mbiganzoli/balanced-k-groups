@@ -33,7 +33,6 @@ export function backtracking(
     enablePruning = true,
     enableEarlyTermination = true,
     enableBoundCalculation = true,
-    seed,
     maxRecursionDepth = 50,
   } = options;
 
@@ -199,7 +198,13 @@ export function backtracking(
         currentGroups[g]!.push(itemIndex);
         currentSums[g] = newSum;
 
-        backtrackRecursive(itemIndex + 1, currentGroups, currentSums, newDelta, recursionDepth + 1);
+        backtrackRecursive(
+          itemIndex + 1,
+          currentGroups,
+          currentSums,
+          newDelta,
+          recursionDepth + 1
+        );
 
         currentGroups[g]!.pop();
         currentSums[g] = currentSums[g]! - capacities[itemIndex]!;

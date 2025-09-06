@@ -24,19 +24,19 @@ function debugInfo(_msg: string): void {
 
 /**
  * Integer Linear Programming approach for balanced partitioning.
- * 
+ *
  * NOTE: This is a placeholder/heuristic implementation that provides basic
  * functionality but does not implement true ILP optimization.
  * For production use, consider using specialized optimization libraries.
- * 
+ *
  * This algorithm is primarily intended for:
  * - Testing and development purposes
  * - Fallback when other algorithms fail
  * - Integration with external ILP solvers (GLPK, CBC, Gurobi)
- * 
+ *
  * The current implementation uses a simple greedy approach and should not
  * be relied upon for optimal solutions in production environments.
- * 
+ *
  * External solver integration is planned but not yet implemented.
  */
 export function ilp(
