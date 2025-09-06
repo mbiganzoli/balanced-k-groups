@@ -40,10 +40,6 @@ A TypeScript library for partitioning T = N × M items (each with a positive cap
 
 ```bash
 npm install balanced-k-groups
-# or
-yarn add balanced-k-groups
-# or
-pnpm add balanced-k-groups
 ```
 
 ### Importing
@@ -332,26 +328,6 @@ console.log('Samples:', comparison.results.slice(0, 3));
 - **MemoryError**: avoid exact methods (`dp`, `backtracking`) on large instances.
 - **NumericalError**: reduce capacity ranges; DP uses scaling internally.
 - Tips: set `selectionStrategy: 'speed'` for latency, enable `hybrid` for quality, and you can call `evaluateGrouping()` to verify solution quality programmatically.
-
----
-
-## Migration
-
-### v1 → v2 (planned)
-
-Potential changes:
-- `algorithmConfig` evaluation option naming alignment
-- Additional ILP solvers and configuration keys
-- Expanded performance history APIs
-
-Deprecations:
-- Old option names will be supported for at least one minor version
-- Warnings will be emitted in development builds
-
-Steps:
-1. Review release notes and changelog
-2. Update `PartitionOptions` usage per README
-3. Re-run tests and benchmarks
 
 ---
 
