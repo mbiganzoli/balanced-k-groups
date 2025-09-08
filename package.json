@@ -1,6 +1,6 @@
 {
   "name": "balanced-k-groups",
-  "version": "1.0.0",
+  "version": "1.0.0-alpha.0",
   "description": "A TypeScript library for balanced N×M partitioning with multiple algorithmic strategies",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
