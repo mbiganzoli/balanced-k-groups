@@ -3,11 +3,11 @@
 [![Coverage](https://img.shields.io/badge/coverage-92.42%25-brightgreen.svg)](https://github.com/balanced-k-groups/balanced-k-groups)
 [![npm version](https://img.shields.io/npm/v/balanced-k-groups.svg)](https://www.npmjs.com/package/balanced-k-groups)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Node.js](https://img.shields.io/badge/node-%3E%3D16.0.0-brightgreen.svg)](https://nodejs.org/)
+[![Node.js](https://img.shields.io/badge/node-%3E%3D20.19.0-brightgreen.svg)](https://nodejs.org/)
 
 A TypeScript library for partitioning T = N × M items (each with a positive capacity) into exactly N groups of exactly M items each, minimizing the maximum difference (delta) between group sums and, secondarily, the standard deviation.
 
-- Node.js ≥ 16
+- Node.js ≥ 20.19.0
 - ESM and CommonJS builds
 - TypeScript types included
 - Tree-shakeable (`sideEffects: false`)
